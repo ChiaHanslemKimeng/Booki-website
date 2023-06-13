@@ -370,7 +370,6 @@ em{
 }
 /*-------footer-----*/
 .footer{
-    height: 150px;
     display: flex;
     padding-top: 40px;
     justify-content: space-between;
@@ -394,4 +393,313 @@ em{
 .About{
   margin-left: 2%;
 }
+.last{
+  background-color: #F2F2F2;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.myname{
+  padding-top: 2%;
+  padding-bottom: 4%;
+  text-align: center;
+}
+.myname p{
+  color: rgb(96, 96, 96);
+}
+.fa-heart-o{
+  color: blue;
+}
+/*------tablet version-------*/
+
+@media(max-width: 768px){
+  nav ul li a{
+    margin-left: 50px;
+  }
+  .first-heading{
+    margin-top: 50px;
+    font-size: 18px;
+  }
+  .head-section{
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .first-heading,
+  .nature{
+    margin-left: 5%;
+  }
+  .nature{
+    margin-top: 13px;
+  }
+  .form-el{
+    margin-left: 5%;
+    margin-top: 4%;
+  }
+  #filters-section{
+     flex-direction: column;
+  }
+  .filters,
+  .filter-buttons{
+    margin-left: 3%;
+  }
+  .filter-buttons{
+     margin-top: 5%;
+  }
+  button{
+    margin-right: 15px;
+  }
+  .info-p{
+    margin-left: 2%;
+  }
+  .info-section{
+    margin-left: 40px;
+  }
+  #accomodation{
+     flex-direction: column;
+     margin-left: 5%;
+     margin-right: 5%;
+     height: 1000px;
+  }
+  .right-section{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     height: 300px;
+     margin-bottom: 20px;
+  }
+  .left-section{
+    margin-bottom: 35px;
+    margin-right: 0;
+  }
+  .show-more{
+    padding-bottom: 22px;
+  }
+  .popular-sections{
+    flex-direction: row;
+  }
+  .popular-star{
+    margin-top: 7%;
+    margin-bottom: 15px;
+  }
+  .popular{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .most-popular{
+    margin: 6% 0 0 3%;
+  }
+  .row3,
+  .row4,
+  .row5{
+    height: 65%;
+    margin: 5px 5px;
+    width: 43%;
+  }
+  .row3{
+      margin-left: 3%;
+  }
+  .row5{
+    margin-right: 3%;
+  }
+  .img1{
+     padding: 3px 3px 0 3px;
+  }
+  .star-icons-2{
+     margin-top: 30px;
+  }
+  .row4 p{
+    margin-top: -3px;
+  }
+  .activity-heading{
+    margin-left: 5%;
+  }
+  .popular-star{
+    display: flex;
+  }
+  #activity{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .footer{
+    padding-right: 0;
+    padding-top: 5%;
+    justify-content: space-between;
+  }
+  .About,
+  .our-accomodations,
+  .assistance{
+     margin-left: 5%;
+  }
+  .assistance{
+    margin-right: 5%;
+  }
+  .myname p{
+    font-size: 14px;
+  }
+}
+
+/*--------mobile version--------*/
+
+@media(max-width: 700px){
+  .head-section{
+     flex-direction: column;
+     border-bottom: 1px solid rgb(96, 96, 96);;
+  }
+  nav{
+    flex-direction: row;
+  }
+  .logo{
+    margin-left: 35%;
+    width: 150px;
+  }
+  nav ul li a{
+    padding-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 31px;
+  }
+  nav ul li a:hover{
+    border-bottom: solid 2px;
+    border-top: none;
+  }
+  nav ul{
+    margin-left: 0;
+    justify-content: space-between;
+  }
+  .first-heading{
+    font-size: 21px;
+  }
+  .nature{
+    font-size: 18px;
+  }
+  .form-el{
+    margin-top: 25px;
+  }
+  .search-section{
+    width: 190px;
+  }
+  .filter-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+  }
+  button{
+    margin-right: 15px;
+    margin-top: 13px;
+  }
+  .info-p{
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .info-section{
+    margin-left: 25px;
+  }
+  /*-------accomodations------*/
+  #accomodation{
+    flex-direction: column;
+    height: 2351px;
+  }
+  .row-1,
+  .row-2{
+    flex-direction: column;
+  }
+  .popular-sections{
+    flex-direction: column;
+  }
+  .left-section{
+    height: 700px;
+    margin-bottom: 20px;
+  }
+  .accomodation-heading{
+     margin-bottom: 20px;
+  }
+  .right-section{
+    height: 730px;
+  }
+  .auberge1,
+  .auberge2{
+    width: 98%;
+    margin-left: 1%;
+    height: 230px;
+    margin-bottom: 15px;
+  }
+  .show-more{
+    padding-bottom: 0;
+  }
+  .row3,
+  .row4,
+  .row5{
+    width: 94%;
+    margin-left: 3%;
+  }
+  .img1{
+    padding: 4px 2px 0 5px;
+  }
+  .row3 h4,
+  .row4 h4,
+  .row5 h4{
+    font-size: 16px;
+  }
+  .row3 p,
+  .row4 p,
+  .row5 p{
+    font-size: 15px;
+    margin-top: 8%;
+  }
+  .star-icons-2{
+    margin-top: 30%;
+  }
+  /*-------activities------*/
+  #activity{
+    height: 1790px;
+    flex-direction: column;
+  }
+  .activity-heading{
+    margin-bottom: 6%;
+  }
+  .old-port,
+  .national-park{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 17px;
+  }
+  .sight-seeings{
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 17px;
+    height: 600px;
+  }
+  .sight-block1,
+  .sight-block2{
+    height: 300px;
+    margin-right: 0;
+  }
+  .sight-block1{
+    margin-bottom: 17px;
+  }
+  .sight-block1 h6,
+  .sight-block2 h6{
+    margin-top: 6%;
+    font-size: 16px;
+  }
+  /*-------footer------*/
+  .footer{
+    flex-direction: column;
+    margin: 10% 0 0 0;
+    
+  }
+  .About,
+  .our-accomodations,
+  .assistance{
+    margin-bottom: 25px;
+    margin-left: 6%;
+  }
+  .footer h4{
+    margin-bottom: 10px;
+  }
+  .myname p{
+    font-size: 10px;
+  }
+}
+
+
 
