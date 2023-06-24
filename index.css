@@ -46,7 +46,6 @@ nav ul li a:hover{
   margin-left: 25px;
 }
 .nature{
-   font-weight: 7px;
    font-size: 13px;
    margin-left: 25px;
    margin-top: 7px;
@@ -63,7 +62,7 @@ nav ul li a:hover{
   width: 37px;
   display: flex;
   align-items: center;
-  height: 43px;
+  height: 45px;
   background-color: #f1eded;
   border: none;
   border-bottom-left-radius: 13px;
@@ -108,17 +107,21 @@ nav ul li a:hover{
     margin-right: 23px;
     margin-top: 11px;
 }
-button{
+.button-el{
   display: flex;
   height: 37px;
   margin-right: 23px;
   padding-right: 18px;
   border-radius: 26px;
   font-weight: bold;
+  font-size: 14px;
   background-color: white;
   border: 2px #d9d0d0 solid;
   align-items: center;
   width: 160px;
+}
+.button-el:hover{
+  cursor: pointer;
 }
 .div-icons{
   background-color: #d6d6f2;
@@ -128,16 +131,18 @@ button{
   margin-right: 7px;
   display: flex;
   align-items: center;
-  padding-left: -10px;
 }
 .filter-buttons{
    display: flex;
 }
 .fa-money-bill-wave:before,
-.fa-person,
-.fa-heart,
-.fa-dog{
-  margin-left: 37%;
+.fa-heart:before,
+.fa-dog:before{
+  padding: 100%;
+  color: #0065FC;
+}
+.fa-person:before{
+  padding: 190%;
   color: #0065FC;
 }
 /*-----info--------*/
@@ -155,7 +160,7 @@ button{
 #accomodation{
   margin: 3% 2% 3% 2%;
   display: flex;
-  height: 650px;
+  height: 690px;
 }
 .left-section{
    margin-right: 4%;
@@ -183,7 +188,7 @@ button{
 .auberge1,
 .auberge2{
   width: 30%;
-  height: 200px;
+  height: 230px;
   background-color: white;
   border-radius: 13px;
   margin-bottom: 25px;
@@ -192,11 +197,11 @@ button{
   box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.15);
 }
 .img1{
-  width: 97%;
+  width: 96%;
   height: 60%;
-  padding-top: 4px;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
   object-fit: cover;
@@ -273,6 +278,7 @@ em{
 .row5 h4{
   margin-left: 5%;
   margin-top: 7%;
+  margin-right: 2%;
   font-size: 14px;
 }
 .row3 p,
@@ -281,7 +287,7 @@ em{
   color: rgb(96, 96, 96);
   font-size: 12px;
   margin-left: 5%;
-  margin-top: 10px;
+  margin-top: 2%;
 }
 .row-text{
   display: flex;
@@ -296,10 +302,10 @@ em{
 }
 .star-icons{
   margin-left: 5%;
-  margin-bottom: 3px;
+  margin-bottom: 2%;
 }
 .star-icons-2{
-  margin-top: 46px;
+  margin-top: 16%;
   margin-left: 5%;
 }
 /*------activity section---------*/
@@ -445,8 +451,9 @@ em{
   .filter-buttons{
      margin-top: 5%;
   }
-  button{
+  .button-el{
     margin-right: 15px;
+    font-size: 12px;
   }
   .info-p{
     margin-left: 2%;
@@ -582,7 +589,7 @@ em{
     flex-wrap: wrap;
     margin-top: 5px;
   }
-  button{
+  .button-el{
     margin-right: 15px;
     margin-top: 13px;
   }
@@ -595,12 +602,16 @@ em{
   }
   /*-------accomodations------*/
   #accomodation{
-    flex-direction: column;
-    height: 2351px;
+    flex-direction: column-reverse;
+    height: 2370px;
+    margin-left: 0;
+    margin-right: 0;
   }
   .row-1,
   .row-2{
     flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
   }
   .popular-sections{
     flex-direction: column;
@@ -608,17 +619,20 @@ em{
   .left-section{
     height: 700px;
     margin-bottom: 20px;
+    border-radius: 0;
   }
   .accomodation-heading{
      margin-bottom: 20px;
   }
   .right-section{
     height: 730px;
+    border-radius: 0;
   }
   .auberge1,
   .auberge2{
-    width: 98%;
-    margin-left: 1%;
+    width: 88%;
+    margin-left: 25px;
+    margin-right: 25px;
     height: 230px;
     margin-bottom: 15px;
   }
@@ -628,11 +642,13 @@ em{
   .row3,
   .row4,
   .row5{
-    width: 94%;
-    margin-left: 3%;
+    width: 87%;
+    margin-left: 25px;
+    margin-right: 25px;
   }
   .img1{
-    padding: 4px 2px 0 5px;
+    padding: 4px 4px 0 5px;
+    width: 97%;
   }
   .row3 h4,
   .row4 h4,
@@ -643,18 +659,18 @@ em{
   .row4 p,
   .row5 p{
     font-size: 15px;
-    margin-top: 8%;
+    margin-top: 3%;
   }
   .star-icons-2{
-    margin-top: 30%;
+    margin-top: 25%;
   }
   /*-------activities------*/
   #activity{
-    height: 1790px;
+    height: 1886px;
     flex-direction: column;
   }
   .activity-heading{
-    margin-bottom: 6%;
+    margin-bottom: 4%;
   }
   .old-port,
   .national-park{
